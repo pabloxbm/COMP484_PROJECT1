@@ -1,0 +1,32 @@
+html,body{
+    background: #303a32;
+    margin: 0;
+}
+body{
+    background: #edf7ef;
+    margin: 0, auto;
+    padding: 2.5% 2.5% 0;
+    width: 94.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    background: #eafcee;
+    margin: 0;
+    padding: .5% 0 .5%;
+    width: 100%;
+    font-size: 1rem;
+    border-top: 1px solid #2b3c36;
+    border-bottom: 1px solid #2b3c36;
+}
+a{
+    color: #4e7f8f;
+    padding: 0 .1%;
+}
+h2{
+    font-size: 1.2rem;
+}
+footer{
+    border-top: 1px solid #2b3c36;
+    padding-bottom: .5%;
+}
