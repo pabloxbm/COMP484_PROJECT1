@@ -1,17 +1,17 @@
 html,body{
-    background: #303a32;
+    background: #90b726;
     margin: 0;
 }
 body{
-    background: #edf7ef;
+    background: #e9e4c5;
     margin: 0, auto;
     padding: 2.5% 2.5% 0;
-    width: 94.5%;
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
 }
 nav{
-    background: #eafcee;
+    background: #ece8cd;
     margin: 0;
     padding: .5% 0 .5%;
     width: 100%;
@@ -23,10 +23,28 @@ a{
     color: #4e7f8f;
     padding: 0 .1%;
 }
+h1{
+    font-size: 3rem;
+}
+article{
+    overflow: hidden;
+}
 h2{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.3rem;
+    word-spacing: .115rem;
+    line-height: 1.6rem;
 }
 footer{
     border-top: 1px solid #2b3c36;
     padding-bottom: .5%;
+}
+.flowRight{
+    float: right;
+    margin-left: 10px;
 }
