@@ -33,7 +33,7 @@ h2{
     font-size: 1.5rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 p{
     font-size: 1.3rem;
@@ -48,7 +48,10 @@ footer{
     text-align: center;
     font-size: 1rem;
 }
-
+dt{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 li{
     font-size: 1.3rem;
     word-spacing: .115rem;
@@ -57,4 +60,11 @@ li{
 .flowRight{
     float: right;
     margin-left: 10px;
+}
+.pearImages{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
