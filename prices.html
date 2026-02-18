@@ -39,12 +39,33 @@
                 </section>
                 <div>
                     <h3>See How Much it Costs Near You!</h3>
-                    <search>
-                        <label>
-                            testinge
-                            <input type="search" name="search" placeholder="Search for pear prices...">
-                        </label>
-                    </search>
+                    <!-- I Used Fieldset here to group all the elements for input in a form (it doesnt work bc i dont know javascript) and used the maxlength attribute to limit input length -->
+                    <fieldset>
+                        <legend>Find Pear Prices Near You</legend>
+                        <p style="font-size: 1.2rem;">Enter your location to find the current prices of pears in your area:</p>
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="City, State, or Zip Code" maxlength="100">
+                        <button type="submit">Search</button>
+                    </fieldset>
+                </div>
+                <div>
+                    <!-- I used optgroup here to categorize pear types (it doesn't work bc I don't know javascript) and I used the selected attribute to select the default option -->
+                    <h3>See How The Cost of a Certain Peart Type Has Changed</h3>
+                    <label for="pearType">Choose a Pear:</label>
+                    <select id="pearType" name="pearType">
+                        <optgroup label="European (Pyrus communis)">
+                            <option selected>Bartlett</option>
+                            <option>Bosc</option>
+                        </optgroup>
+                        <optgroup label="Asian (Pyrus pyrifolia)">
+                            <option>Nijisseiki</option>
+                            <option>Hosui</option>
+                        </optgroup>
+                        <optgroup label="Hybrid">
+                            <option>Shinseiki</option>
+                            <option>Seckel</option>
+                        </optgroup>
+                    </select>
                 </div>
             </article>
         </main>
