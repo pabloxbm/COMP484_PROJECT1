@@ -64,10 +64,38 @@ li{
     float: right;
     margin-left: 10px;
 }
+.flowLeft{
+    float: left;
+    margin-right: 10px;
+}
 .pearImages{
     display: flex;
     align-items: center;
     gap: 20px;
     justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.timelinePears{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+pre{
+    font-size: 1.2rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+    word-wrap:break-word;
+}
+.pear-map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }

@@ -28,45 +28,59 @@
                 <section>
                     <h3>How Much Has the Price Changed?</h3>
                     <p>
-                        Over the past century and especially in recent decades, pear prices have changed noticeably over time, influenced by production costs, transportation, trade, and regional demand which you can see in actual price data. In the United States, the price per pound of pears at the retail level has climbed from around $0.59 per pound in 1981 to about $2.29 per pound in 2023, reflecting a general upward trend with both rises and occasional dips along the way. Daily variations have occurred, but overall pears are more expensive now than they were decades ago.
+                        Over the past century and especially in recent decades, pear prices have changed noticeably over time, influenced by production costs, transportation, trade, and regional demand which you can see in actual price data. 
+                        In the United States, the price per pound of pears at the retail level has climbed from around $0.59 per pound in 1981 to about $2.29 per pound in 2023, reflecting a general upward trend with both rises and occasional dips along the way. 
+                        Daily variations have occurred, but overall pears are more expensive now than they were decades ago.
                     </p>
                     <p>
-                        On a regional level, prices differ significantly. In North America, consumers commonly pay between $1.50 and $3.00 per pound at retail, with projections suggesting prices rising toward $1.75-$3.25 per pound because of increased production and demand for organic fruit. In Europe, pears are typically sold in the range of €2.00-€4.00 per kilogram, with expectations of moderate increases as demand for local and organic produce grows. In parts of Asia, where production volumes are large, prices have generally been lower, often around ¥5-¥10 per kilogram, though they too are expected to rise as demand increases.
+                        On a regional level, prices differ significantly. In North America, consumers commonly pay between $1.50 and $3.00 per pound at retail, with projections suggesting prices rising toward $1.75-$3.25 per pound 
+                        because of increased production and demand for organic fruit. In Europe, pears are typically sold in the range of €2.00-€4.00 per kilogram, with expectations of moderate increases as demand for local and organic produce grows. 
+                        In parts of Asia, where production volumes are large, prices have generally been lower, often around ¥5-¥10 per kilogram, though they too are expected to rise as demand increases.
                     </p>
                     <p>
-                        Different types of pears also command different prices: for example, imported Asian pears often cost more &lang;$4.00-$7.00&rang; per pound because of limited supply, import costs, and specialty market demand. Meanwhile, more common varieties like Bartlett typically fall in the lower part of the price range due to wider cultivation and greater availability. Over the decades, these shifts illustrate how global markets, transportation, and consumer preferences for specialty and organic varieties have reshaped pear pricing across regions and types.
+                        Different types of pears also command different prices: for example, imported Asian pears often cost more &lang;$4.00-$7.00&rang; per pound because of limited supply, import costs, and specialty market demand. 
+                        Meanwhile, more common varieties like Bartlett typically fall in the lower part of the price range due to wider cultivation and greater availability. Over the decades, these shifts illustrate how global markets, transportation, 
+                        and consumer preferences for specialty and organic varieties have reshaped pear pricing across regions and types.
                     </P>
                 </section>
                 <div>
-                    <h3>See How Much it Costs Near You!</h3>
-                    <!-- I Used Fieldset here to group all the elements for input in a form (it doesnt work bc i dont know javascript) and used the maxlength attribute to limit input length -->
-                    <fieldset>
-                        <legend>Find Pear Prices Near You</legend>
-                        <p style="font-size: 1.2rem;">Enter your location to find the current prices of pears in your area:</p>
-                        <label for="location">Location:</label>
-                        <input type="text" id="location" name="location" placeholder="City, State, or Zip Code" maxlength="100">
-                        <button type="submit">Search</button>
-                    </fieldset>
+                    <img src="/images/pearimg7.jpg" alt="pear in shopping card" width="350px" height="300px" class="flowRight" style="margin-right: 50px; margin-bottom: 20px;">
+                    <h3>How Much Does it Cost Now?</h3>
+                    <form onsubmit="priceOutput.value = 'The current price of asian pears in ' + location.value + ' is $2.79 per pound. For bosc pears its 1.08 per pound and for Forelle pears its 3.29 a pound.'; return false;">
+                        <!-- I Used Fieldset here to group all the elements for input in a form (it doesnt work bc i dont know javascript) and used the maxlength attribute to limit input length to 168 as thats the longest city name currently in the world -->
+                        <fieldset >
+                            <legend>Find Pear Prices Near You</legend>
+                            <p style="font-size: 1.2rem;">Enter your location to find the current prices of pears in your area:</p>
+                            <label for="location">City:</label>
+                            <input type="text" id="location" name="location" placeholder="Ex: Northridge" maxlength="168" required>
+                            <button type="submit">Search</button>
+                            <output name="priceOutput" for="location"></output>
+                        </fieldset>
+                    </form>
                 </div>
-                <div>
-                    <!-- I used optgroup here to categorize pear types (it doesn't work bc I don't know javascript) and I used the selected attribute to select the default option -->
-                    <h3>See How The Cost of a Certain Peart Type Has Changed</h3>
-                    <label for="pearType">Choose a Pear:</label>
-                    <select id="pearType" name="pearType">
-                        <optgroup label="European (Pyrus communis)">
-                            <option selected>Bartlett</option>
-                            <option>Bosc</option>
-                        </optgroup>
-                        <optgroup label="Asian (Pyrus pyrifolia)">
-                            <option>Nijisseiki</option>
-                            <option>Hosui</option>
-                        </optgroup>
-                        <optgroup label="Hybrid">
-                            <option>Shinseiki</option>
-                            <option>Seckel</option>
-                        </optgroup>
-                    </select>
-                </div>
+                <section>
+                    <div>
+                        <!-- I used optgroup here to categorize pear types (it doesn't work bc I don't know javascript so i disabled the other options) and I used the selected attribute to select the default option -->
+                        <h3>How Has the Price Changed?</h3>
+                        <label for="pearType">Choose a Pear:</label>
+                        <select id="pearType" name="pearType">
+                            <optgroup label="European (Pyrus communis)">
+                                <option selected>Bartlett</option>
+                                <option disabled>Bosc</option>
+                            </optgroup>
+                            <optgroup label="Asian (Pyrus pyrifolia) " disabled>
+                                <option>Nijisseiki</option>
+                                <option>Hosui</option>
+                            </optgroup>
+                            <optgroup label="Hybrid" disabled>
+                                <option>Shinseiki</option>
+                                <option>Seckel</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <img src="/images/Price of Barlett Pears 1980s-Now.png" alt="price of barlett pears from 1980s-now" style="margin: 20px; top: 50px;">
+                </section>
             </article>
         </main>
         <footer role="contentinfo">
